@@ -4,7 +4,7 @@ import { createContext, useEffect, useState } from "react";
 export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
     const [cartItems,setCartItems] = useState({});
-    const url = "http://localhost:4000"
+    const url = "https://food-ordering-backend-six.vercel.app"
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
 // Add to cart
